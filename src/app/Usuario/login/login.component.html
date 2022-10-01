@@ -1,0 +1,23 @@
+
+
+<div class="login">
+    <form class="custom-form" method="post">
+        <h1>Login</h1>
+        <input
+        type="text"
+        [(ngModel)]="usuario"
+        name="usuario"
+        placeholder="Nombre"
+        required="required"
+        />
+        <input
+        type="password"
+        [(ngModel)]="clave"
+        name="clave"
+        placeholder="Contraseña"
+        required="required"
+        />
+        <button type="submit" class="btn btn-primary" (click)="login()" >Log in</button> <br>
+        <button type="submit" class="btn btn-primary" (click)="redrg()" >Regristrarse</button>
+    </form>
+</div>

@@ -1,0 +1,23 @@
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Usuario</th>
+            <th scope="col"></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+            <td>{{user.usuario}}</td>
+            <td>
+                <a class="btn btn-danger" type="submit" (click)="deleteUser()">Eliminar</a>
+            </td>
+            <td>
+                <a class=" btn btn-secondary" routerLink="/users/update">Actualizar</a>
+            </td>
+        </tr>
+    </tbody>
+</table>
